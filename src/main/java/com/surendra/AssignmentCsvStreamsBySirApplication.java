@@ -16,6 +16,8 @@ public class AssignmentCsvStreamsBySirApplication {
 	public static void main(String[] args) throws IOException {
 		ConfigurableApplicationContext ctx = SpringApplication.run(AssignmentCsvStreamsBySirApplication.class, args);
 		CSVReader csv=ctx.getBean(CSVReader.class);
+		int i=10;
+		int j=20;
 		List<Products> lsp=csv.gerReader();
 		lsp.forEach(System.out::println);
 	}
