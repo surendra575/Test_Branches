@@ -18,6 +18,7 @@ public class AssignmentCsvStreamsBySirApplication {
 		CSVReader csv=ctx.getBean(CSVReader.class);
 		int i=30;
 		int j=40;
+		int k=50;
 		List<Products> lsp=csv.gerReader();
 		lsp.forEach(System.out::println);
 	}
